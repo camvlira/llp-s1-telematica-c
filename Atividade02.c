@@ -6,15 +6,15 @@ void matrixSum(int n, int A[][n], int B[][n], int C[][n]) {
         }}}
 int main() {
     int n = 3;
-    int A[3][3] = {{1, 5, 3}, {2, 5, 1}, {7, 1, 3}};
-    int B[3][3] = {{1, 3, 3}, {1, 6, 3}, {3, 4, 1}};
-    int C[3][3];
+    int Mat1[3][3] = {{1, 5, 3}, {2, 5, 1}, {7, 1, 3}};
+    int Mat2[3][3] = {{1, 3, 3}, {1, 6, 3}, {3, 4, 1}};
+    int MatSum[3][3];
 
-    matrixSum(n, A, B, C);
+    matrixSum(n, Mat1, Mat2, MatSum);
     printf("Soma da matrizes:\n");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            printf("%i ", C[i][j]);
+            printf("%i ", MatSum[i][j]);
         }printf("\n");}
     return 0;
 }
