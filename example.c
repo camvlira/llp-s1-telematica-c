@@ -5,7 +5,7 @@ int main() {
     int numero;
 
 printf("Digite um número inteiro: ");
-scanf("%i", &numero);
+scanf("%d", &numero);
 
 if(numero <= 0) {
     printf("\nNúmero inválido. \n");
